@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Swarmony</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1366px; height: 768px; background: #231F20"></canvas>
+    <script src="Build/FB-WebGL.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/FB-WebGL.data",
+        frameworkUrl: "Build/FB-WebGL.framework.js",
+        codeUrl: "Build/FB-WebGL.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Brackeys Game Jam 2021.1",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
